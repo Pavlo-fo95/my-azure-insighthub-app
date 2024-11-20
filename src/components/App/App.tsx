@@ -27,7 +27,7 @@ const App: React.FC = () => {
         throw new Error("REACT_APP_API_URL не установлен в .env файле");
       }
       
-      const response = await axios.get("https://webapplication220241104121304.azurewebsites.net/api/Cards");
+      const response = await axios.get("https://cardclient20241120225638.azurewebsites.net/api/Cards");
       setWeapons(response.data);
     } catch (err) {
       console.error("Error fetching data:", err);
@@ -55,9 +55,9 @@ const App: React.FC = () => {
     return <div>Загрузка...</div>;
   }
 
-  if (error) {
-    return <div>{error}</div>;
-  }
+  // if (error) {
+  //   return <div>{error}</div>;
+  // }
 
   return (
     <div>
