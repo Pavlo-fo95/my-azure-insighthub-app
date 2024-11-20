@@ -1,0 +1,67 @@
+.weapon-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 24px; /* Увеличил расстояние между карточками */
+    padding: 24px; /* Увеличил внутренние отступы */
+}
+
+.weapon-card {
+    border: 1px solid #dcdcdc; /* Уменьшил контрастность границы для более мягкого визуального эффекта */
+    border-radius: 10px; /* Более закругленные углы */
+    padding: 20px; /* Увеличил внутренние отступы */
+    text-align: center;
+    background-color: #ffffff; /* Сделал фон карточки белым */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Более сильная тень для лучшего разделения карточек */
+    transition: transform 0.2s, box-shadow 0.2s; /* Добавил эффект наведения */
+}
+
+.weapon-card:hover {
+    transform: translateY(-5px); /* Поднятие карточки при наведении */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Более выразительная тень при наведении */
+}
+
+.weapon-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Соответствие с закругленными углами карточки */
+    margin-bottom: 16px; /* Увеличил нижний отступ для улучшения визуального разделения */
+}
+
+.weapon-card h2 {
+    font-size: 1.4em; /* Немного увеличил размер текста для заголовка */
+    margin: 12px 0; /* Увеличил отступы */
+    color: #333333; /* Более насыщенный цвет для заголовка */
+}
+
+.weapon-card p {
+    margin: 6px 0; /* Увеличил отступы */
+    color: #555555; /* Добавил цвет для текста, чтобы улучшить читаемость */
+    line-height: 1.5; /* Добавил расстояние между строками */
+}
+
+.weapon-card .weapon-category {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #007bff; /* Цвет категории для выделения */
+}
+
+.weapon-card .weapon-description {
+    font-size: 0.9em;
+    color: #666666;
+}
+
+.weapon-card button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4b5c; /* Яркий красный цвет для кнопок */
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.weapon-card button:hover {
+    background-color: #d73c4a; /* Более насыщенный цвет при наведении */
+}
