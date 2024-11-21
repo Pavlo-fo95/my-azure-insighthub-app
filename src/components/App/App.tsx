@@ -30,12 +30,12 @@ const App: React.FC = () => {
       const response = await axios.get("https://cardclient20241120225638.azurewebsites.net/api/Cards");
       setWeapons(response.data);
     } catch (err) {
-      console.error("Error fetching data:", err);
+      console.error("Error fetching data:", error);
       setError("Ошибка при загрузке данных");
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [error]);
 
   useEffect(() => {
     fetchWeapons();
